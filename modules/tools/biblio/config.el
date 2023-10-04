@@ -71,7 +71,7 @@
   :config (citar-embark-mode))
 
 (use-package! citar-org-roam
-  :when (and (modulep! +roam2)
+  :when (and (modulep! :lang org +roam2)
              (modulep! :completion vertico))
   :after citar org-roam
   :config (citar-org-roam-mode))
